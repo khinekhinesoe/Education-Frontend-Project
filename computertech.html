@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputerTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/academics.css">
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <link rel="stylesheet" href="./css/searchBarStyle.css">
+</head>
+
+<body> 
+    <nav class="navbar fixed-top navbar-expand-lg text-white " style="background-color: rgb(64, 88, 109);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./image/ukala.png" alt="Logo" width="85" height="55"
+                    class="d-inline-block align-text-top rounded-5">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse ms-lg-5 ms-sm-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5">
+                    <li class="nav-item me-4">
+                        <b><a class="nav-link active" aria-current="page" href="index.html">Home</a></b>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Academic
+                        </a>
+                        <ul class="dropdown-menu bg-">
+                          <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="computerscience.html">Computer Science</a></li>
+                          <li><a class="dropdown-item" href="computertech.html">Computer Technology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                <div class="container-flex justify-content-end">
+                    <form class="row" role="search" onsubmit="return search()">
+                        <div class="col-6">
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" id="search_input"
+                        oninput="showSuggestions()" autocomplete="off">
+                        <div id="suggestions"></div>
+
+                        </div>
+                        <div class="col-6">
+                            <button class="col-6 btn text-white category_hover_button" style="background-color: rgb(147, 173, 194);"
+                            type="submit">Search</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center align-items-center" style="background-color: rgb(232, 198, 164);border-radius:10px">
+                <h1>Bachelor of Computer Technology</h1>
+            </div>
+            <div class="row m-lg-5 p-lg-4 m-md-3 p-md-3 m-sm-2 mb-5" style="background-color: rgba(247, 222, 197, 0.87); border-radius:10px">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <h1><u>First Year</u></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            10.2 M<br>Followers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">First Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        Myanmar
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Physics
+                    </div>
+                    <div class="row mb-1">
+                        Principle of Information Technology
+                    </div>
+                    <div class="row mb-1">
+                        Calculus (I)
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">Second Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        Myanmar
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Physics
+                    </div>
+                    <div class="row mb-1">
+                        Principle of Information Technology
+                    </div>
+                    <div class="row mb-1">
+                        Calculus (I)
+                    </div>
+                </div>
+            </div>
+            <div class="row m-lg-5 p-lg-4 m-md-3 p-md-3 m-sm-2 mb-5" style="background-color: rgba(247, 222, 197, 0.87); border-radius:10px">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <h1><u>Second Year</u></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            10.2 M<br>Followers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">First Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Java Programming Language
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (II)
+                    </div>
+                    <div class="row mb-1">
+                        Digital Logic Fundamentals
+                    </div>
+                    <div class="row mb-1">
+                        Database Management System
+                    </div>
+                    <div class="row mb-1">
+                        Web Programming
+                    </div>
+                    <div class="row mb-1">
+                        Electrical Circuits (I)
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">Second Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Java Programming Language
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (II)
+                    </div>
+                    <div class="row mb-1">
+                        Advanced Data Structure
+                    </div>
+                    <div class="row mb-1">
+                        System Analysis and Design
+                    </div>
+                    <div class="row mb-1">
+                        Digital System Design
+                    </div>
+                    <div class="row mb-1">
+                        Electrical Circuits (I)
+                    </div>
+                </div>
+            </div>
+            <div class="row m-lg-5 p-lg-4 m-md-3 p-md-3 m-sm-2 mb-5" style="background-color: rgba(247, 222, 197, 0.87); border-radius:10px">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <h1><u>Third Year</u></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            10.2 M<br>Followers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">First Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Computer Organization
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (III)
+                    </div>
+                    <div class="row mb-1">
+                        Data and Computer Communications (I)
+                    </div>
+                    <div class="row mb-1">
+                        Electronics
+                    </div>
+                    <div class="row mb-1">
+                        Linear Control Systems (I)
+                    </div>
+                    <div class="row mb-1">
+                        Electrical Circuits (II)
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">Second Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Operating System
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (III)
+                    </div>
+                    <div class="row mb-1">
+                        Computer Networking
+                    </div>
+                    <div class="row mb-1">
+                        Electronics
+                    </div>
+                    <div class="row mb-1">
+                        Computer Architecture (I)
+                    </div>
+                    <div class="row mb-1">
+                        Microprocessor Architecture and Interfacing
+                    </div>
+                </div>
+            </div>
+            <div class="row m-lg-5 p-lg-4 m-md-3 p-md-3 m-sm-2 mb-5" style="background-color: rgba(247, 222, 197, 0.87); border-radius:10px">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <h1><u>Fourth Year</u></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            10.2 M<br>Followers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">First Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Artificial Intelligence
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (IV)
+                    </div>
+                    <div class="row mb-1">
+                        Introduction to Microcontrollers
+                    </div>
+                    <div class="row mb-1">
+                        Computer Architecture (II)
+                    </div>
+                    <div class="row mb-1">
+                        Control Systems 
+                    </div>
+                    <div class="row mb-1">
+                        Data and Computer Communications (II)
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">Second Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Database Management System
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (IV)
+                    </div>
+                    <div class="row mb-1">
+                        Introduction to Embedded Systems
+                    </div>
+                    <div class="row mb-1">
+                        Computer Architecture (II)
+                    </div>
+                    <div class="row mb-1">
+                        Cryptography
+                    </div>
+                    <div class="row mb-1">
+                        Computer Security
+                    </div>
+                </div>
+            </div>
+            <div class="row m-lg-5 p-lg-4 m-md-3 p-md-3 m-sm-2 mb-5" style="background-color: rgba(247, 222, 197, 0.87); border-radius:10px">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <h1><u>Fifth Year</u></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            10.2 M<br>Followers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">First Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        English
+                    </div>
+                    <div class="row mb-1">
+                        Mathematics of Computing (V)
+                    </div>
+                    <div class="row mb-1">
+                        Distributed Computing Systems + Advanced Networking
+                    </div>
+                    <div class="row mb-1">
+                        Fuzzy Logic Control System
+                    </div>
+                    <div class="row mb-1">
+                        Network Security
+                    </div>
+                    <div class="row mb-1">
+                        Image Processing and Computer Vision
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 p-4">
+                    <div class="row">
+                        <h4 style="padding:0%;">Second Semester</h4>
+                    </div>
+                    <div class="row mb-1">
+                        <br>
+                    </div>
+                    <div class="row mb-1">
+                        Internship/Project
+                    </div>
+                    <div class="row mb-1">
+                        Internship/Project
+                    </div>
+                    <div class="row mb-1">
+                        Internship/Project
+                    </div>
+                    <div class="row mb-1">
+                        Internship/Project
+                    </div>
+                    <div class="row mb-1">
+                        Internship/Project
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-body-tertiary text-center">
+
+        <div class="container p-4">
+
+            <section class="mb-3">
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+                harum corrupti dicta, aliquam sequi voluptate quas.
+            </p>
+        </div>
+
+        <div class="text-center p-3 text-white " style="background-color: rgb(109, 121, 131);">
+
+            © 2024 OurRight:
+            <a class="text-reset fw-bold" href="#">Our website.com</a>
+        </div>
+
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        // Show the button when scrolled down 20px from the top of the document
+        window.onscroll = function() {
+            let button = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to the top of the document when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="./javascript/searchfunction.js"></script>
+</body>
+
+</html>

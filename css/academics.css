@@ -1,0 +1,169 @@
+.navbar .container div ul li a {
+  color: white !important;
+}
+
+.category_hover:hover {
+  background-color: rgb(109, 121, 131);
+  color: rgb(43, 41, 41) !important;
+
+}
+
+.category_hover_button:hover {
+  color: rgb(61, 61, 61) !important;
+}
+
+.image-with-text {
+  position: relative;
+}
+
+.image-adjust
+{
+  width: 95%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.showcase-paragraph
+{
+  font-size: 1rem;
+}
+
+.cam1
+{
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.cam2 {
+  transform: scale(1.1);
+  height: 610px;
+  width: 1285px;
+  filter: brightness(30%);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.top-text-overlay {
+  position: absolute;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 140px;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.fonttop {
+  font-size: 48px;
+}
+
+/* Custom styles for small devices */
+@media (max-width: 500px) {
+  .top-text-overlay {
+    font-size: 12px;
+    bottom: 70px;
+  }
+
+  .fonttop {
+    font-size: 12px;
+  }
+
+  .text-overlay {
+    bottom: 5px;
+    font-size: 10px;
+  }
+}
+
+/* Custom styles for medium devices */
+@media (min-width: 501px) and (max-width: 767.98px) {
+  .top-text-overlay {
+    font-size: 24px;
+    bottom: 90px;
+  }
+
+  .fonttop {
+    font-size: 24px;
+  }
+
+  .text-overlay {
+    bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+/* Custom styles for large devices */
+@media (min-width: 768px) {
+  .top-text-overlay {
+    font-size: 36px;
+    bottom: 140px;
+  }
+
+  .fonttop {
+    font-size: 48px;
+  }
+
+  .text-overlay {
+    bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.hContact:hover{
+  background-color: #385574;
+  color: rgb(59, 54, 54) !important;
+  }
+  .no-underline{
+    text-decoration: none;
+  }
+  
+  .contactHover:hover i {
+    background-color: rgb(238, 232, 232);
+    border-radius: 50%; /* Optional: make the background circular */
+    padding: 5px; /* Optional: add padding for better visual */
+  }
+
+  
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 5%;
+  height: 10%;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.facility-image {
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.facility-image:hover {
+  transform: scale(1.1); /* Zoom in effect */
+  filter: brightness(80%); /* Darken the image slightly */
+}

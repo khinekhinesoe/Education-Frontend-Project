@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/aboutStyle.css" />
+  <link rel="stylesheet" href="./css/searchBarStyle.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg text-white " style="background-color: rgb(64, 88, 109);">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./image/ukala.png" alt="Logo" width="85" height="55"
+                class="d-inline-block align-text-top rounded-5">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse ms-lg-5 ms-sm-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5">
+                    <li class="nav-item me-4">
+                        <b><a class="nav-link active" aria-current="page" href="index.html">Home</a></b>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Academic
+                        </a>
+                        <ul class="dropdown-menu bg-">
+                          <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="computerscience.html">Computer Science</a></li>
+                          <li><a class="dropdown-item" href="computertech.html">Computer Technology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                <div class="container-flex justify-content-end">
+                    <form class="row" role="search" onsubmit="return search()">
+                        <div class="col-6">
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" id="search_input"
+                        oninput="showSuggestions()" autocomplete="off">
+                        <div id="suggestions"></div>
+
+                        </div>
+                        <div class="col-6">
+                            <button class="col-6 btn text-white category_hover_button" style="background-color: rgb(147, 173, 194);"
+                            type="submit">Search</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        
+    </div>
+</nav>
+  <br>
+  <div class="image-with-text">
+    <div class="mb-2 img-fluid image-adjust">
+      <img src="./image/campus1copy.jpg" class="img-fluid cam2" alt="BMW Skytop" />
+    </div>
+    <div class="top-text-overlay">
+      <h1 class="fonttop mb-4">About Us</h1>
+      <button class="btn btn-outline-light btn-lg border-2 hContact contactHover">
+        <i class="fa-solid fa-user-graduate"></i>
+        <a href="#about" class="w-full fs-sm-2 text-white fs-3 no-underline">See More</a>
+      </button>
+    </div>
+  </div>
+  <hr>
+
+    <div class="container-fluid p-sm-5 bg-body-secondary" id="about">
+    <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 bg-light mt-5">
+      <div class="col-lg-6 col-md-12 col-sm-12 p-2">
+        <h3 style="text-align: center" class="shadow-sm ">
+          University History
+        </h3>
+        <p class="p-3">
+          The University of Computer Studies, Magway, established on January 6, 2000, under Myanmar's Ministry of Science and Technology, is a leading institution specializing in computer science education. It provides undergraduate programs focusing on computer science, information technology, and related fields, aiming to meet the country's increasing demand for skilled IT professionals. UCS(Mgy) continually updates its curriculum to incorporate emerging technologies, engages in research, and collaborates with industry and government partners to advance the IT sector. Through its programs and initiatives, UCS(Mgy) plays a pivotal role in developing a competent workforce and promoting technological innovation in Myanmar.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 p-3"  id="#about">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./image/campus1.jpg" class="d-block w-100 h-100 image-position" alt="Campus 1" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./image/campus2.jpg" class="d-block w-100 h-100 image-position" alt="Campus 2" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./image/campus6.jpg" class="d-block w-100 h-100 image-position" alt="Campus 6" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./image/activities3.jpg" class="d-block w-100 h-100 image-position" alt="Activities 3" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./image/campus8.jpg" class="d-block w-100 h-100 image-position" alt="Campus 8" />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./image/activities4.jpg" class="d-block w-100 h-100 image-position" alt="Activities 4" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <img src="/image/campus6.jpg" alt="Our University History..." class="image-adjust img-fluid" > -->
+      </div>
+    </div>
+    </div>
+
+  <div class="container-fluid bg-dark-subtle  p-5">
+    <h2 class="text-center mb-4 text-body-secondary">Our Teachers' Wisdom and Insights</h2>
+
+    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 row justify-content-center align-items-center">
+      <div class="col">
+        <div class="card cardborder_none">
+          <div class="card-img-top mt-3 p-3">
+            <img src="./image/DrSLA.jpg" alt="" class="card-img-tr" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Soe Lin Aung</h5>
+            <p class="card-text text-center mt-4 mb-2">
+              "Embrace challenges as opportunities for growth."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card cardborder_none">
+          <div class="card-img-top mt-3 p-3">
+            <img src="./image/DrKST.jpg" alt="" class="card-img-tr" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Khin San Thu</h5>
+            <p class="card-text text-center mt-4 mb-2">
+              "In every challenge lies an opportunity for growth."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card cardborder_none">
+          <div class="card-img-top mt-3 p-3">
+            <img src="./image/DrZMM.jpg" alt="" class="card-img-tr" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Zin Mar Myo</h5>
+            <p class="card-text text-center mt-4 mb-2">
+              "Knowledge fuels growth and innovation."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Campus and Facilities -->
+
+  <div class="container-fluid bg-body-secondary p-lg-4  p- p-sm-4">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="shadow-sm text-center mb-5">Campus and Facilities</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <div class="card g-2 card-position-facility">
+          <img src="./image/computer_room4.jpg" alt="Computer Room" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h5 class="card-title">Computer Room</h5>
+            <p class="card-text">
+              Our university have four computer room: 
+              (Machine Room A. Machine Room C,Machine Room D). Each have over 50 computers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <div class="card g-2 card-position-facility">
+          <img src="./image/library3.jpg" alt="University Library" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h5 class="card-title">University Library</h5>
+            <p class="card-text p-2">
+              Our library serves as the intellectual heart of the university,
+              providing range of resources to support the academic of students.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <div class="card g-2 card-position-facility">
+          <img src="./image/campus5_hostel.jpg" alt="Hostel" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h5 class="card-title">Hostel in University</h5>
+            <p class="card-text p-2">
+              Welcome to our University Hostels, where we provide a secure, comfortable, and enriching living
+              environment for all our students.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <div class="card g-2 card-position-facility">
+          <img src="./image/canteen3.jpg" alt="Canteen" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h5 class="card-title">Canteen</h5>
+            <p class="card-text p-2">
+              Our canteen offers a wide variety of food options to cater to all tastes
+              and dietary needs,ensuring that you have access to nutritious.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Activities  -->
+  <div class="container-fluid bg-body-tertiary">
+    <div class="row p-3 mb-3">
+      <div class="col-12">
+        <h2 class="shadow-sm text-center mb-4">Our Activities</h2>
+        <p class="mt-2 fs-5 mt-3 mb-2 text-center">At our university, a vibrant array of activities awaits to enrich your campus experience.
+          From student-run clubs and sports teams to cultural events and community service projects,
+          there's something for everyone. Engage in workshops and seminars to enhance your skills, or relax and
+          socialize at our many social events. Our diverse programs are designed to foster personal growth, build
+          community, and create lasting memories.
+          Join us and make the most of your university life!</p>
+      </div>
+    </div>
+    <div class="row gy-sm-4 g-lg-3 g-md-3 g-sm-3 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 justify-content-center">
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/activities18.jpg" alt="" class="card-img-top ">
+          <div class="card-body">
+            <h5 class="card-title">Project Competition</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/activities7_waterfestival.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">University Water Festival</h4>
+              
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/activities13.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Independence day Ceremony</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/activities_football.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Sports competition</h4>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/student2.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Student Life</h4>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-position-activity">
+          <img src="./image/activities3.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Online Project Competition </h4>
+          
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-body-tertiary text-center">
+    <div class="container p-4">
+      <section class="mb-3">
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+        distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+        optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi
+        voluptate quas.
+      </p>
+    </div>
+
+    <div class="text-center p-3 text-white" style="background-color: rgb(109, 121, 131)">
+      © 2024 OurRight:
+      <a class="text-reset fw-bold" href="#">Our website.com</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Image Carousel -->
+  <script>
+    var carouselElement = document.getElementById(
+      "carouselExampleAutoplaying"
+    );
+    var carousel = new bootstrap.Carousel(carouselElement, {
+      interval: 1500, // 2 seconds
+    });
+  </script>
+  <script src="./javascript/searchfunction.js"></script>
+</body>
+
+</html>

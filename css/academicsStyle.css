@@ -1,0 +1,391 @@
+.navbar .container div ul li a {
+  color: white !important;
+}
+
+.category_hover:hover {
+  background-color: rgb(109, 121, 131);
+  color: rgb(43, 41, 41) !important;
+
+}
+
+.category_hover_button:hover {
+  color: rgb(61, 61, 61) !important;
+}
+
+.image-with-text {
+  position: relative;
+}
+
+.image-adjust
+{
+  width: 95%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.showcase-paragraph
+{
+  font-size: 1rem;
+}
+
+.cam1
+{
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.cam2{
+  transform: scale(1.1);
+  filter: brightness(30%);
+  height: 100vh;
+  width: 95.1%;  
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.top-text-overlay {
+  position: absolute;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 140px;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.fonttop {
+  font-size: 48px;
+}
+
+/* Custom styles for small devices */
+@media (max-width: 500px) {
+  .top-text-overlay {
+    font-size: 12px;
+    bottom: 70px;
+  }
+
+  .fonttop {
+    font-size: 12px;
+  }
+
+  .text-overlay {
+    bottom: 5px;
+    font-size: 10px;
+  }
+}
+
+/* Custom styles for medium devices */
+@media (min-width: 501px) and (max-width: 767.98px) {
+  .top-text-overlay {
+    font-size: 24px;
+    bottom: 90px;
+  }
+
+  .fonttop {
+    font-size: 24px;
+  }
+
+  .text-overlay {
+    bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+/* Custom styles for large devices */
+@media (min-width: 768px) {
+  .top-text-overlay {
+    font-size: 36px;
+    bottom: 140px;
+  }
+
+  .fonttop {
+    font-size: 48px;
+  }
+
+  .text-overlay {
+    bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.hContact:hover{
+  background-color: #385574;
+  color: rgb(59, 54, 54) !important;
+  }
+  .no-underline{
+    text-decoration: none;
+  }
+  
+  .contactHover:hover i {
+    background-color: rgb(238, 232, 232);
+    border-radius: 50%; /* Optional: make the background circular */
+    padding: 5px; /* Optional: add padding for better visual */
+  }
+
+  
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 5%;
+  height: 10%;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.navbar .container div ul li a
+{
+  color: white !important;
+}
+.category_hover:hover
+{
+  background-color: rgb(109, 121, 131);
+  color: rgb(43, 41, 41) !important;
+
+}
+
+.category_hover_button:hover{
+  color: rgb(61, 61, 61) !important;
+}
+
+.image-with-text {
+    position: relative;
+  }
+
+  .cam2{
+    transform: scale(1.1);
+    filter: brightness(30%);  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .top-text-overlay {
+    position: absolute;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 140px;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fonttop {
+    font-size: 48px;
+  }
+  
+  /* Custom styles for small devices */
+  @media (max-width: 500px) {
+    .top-text-overlay {
+      font-size: 12px;
+      bottom: 70px;
+    }
+  
+    .fonttop {
+      font-size: 12px;
+    }
+  
+    .text-overlay {
+      bottom: 5px;
+      font-size: 10px;
+    }
+  }
+  
+  /* Custom styles for medium devices */
+  @media (min-width: 501px) and (max-width: 767.98px) {
+    .top-text-overlay {
+      font-size: 24px;
+      bottom: 90px;
+    }
+  
+    .fonttop {
+      font-size: 24px;
+    }
+  
+    .text-overlay {
+      bottom: 10px;
+      font-size: 18px;
+    }
+  }
+.card {
+  border: none; /* This will remove the border from the card */
+}
+  
+  /* Custom styles for large devices */
+  @media (min-width: 768px) {
+    .top-text-overlay {
+      font-size: 36px;
+      bottom: 140px;
+    }
+  
+    .fonttop {
+      font-size: 48px;
+    }
+  
+    .text-overlay {
+      bottom: 20px;
+      font-size: 24px;
+    }
+  }
+  .card-custom {
+    margin: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #9dc1e4;
+   
+}
+
+.activity-card {
+  max-width: 700px; 
+  transition: max-width 1.4s ease, transform 0.8s ease; 
+}
+
+.activity-card:hover {
+  max-width: 950px;
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card .card-body {
+  transition: opacity 0.3s ease; 
+}
+
+.activity-card:hover .card-body {
+  opacity: 0.8;
+}
+.hContact:hover{
+background-color: #385574;
+color: rgb(59, 54, 54) !important;
+}
+.no-underline{
+  text-decoration: none;
+}
+
+.contactHover:hover i {
+  background-color: rgb(238, 232, 232);
+  border-radius: 50%; /* Optional: make the background circular */
+  padding: 5px; /* Optional: add padding for better visual */
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 5%;
+  height: 10%;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #737070; /* Dark grey background */
+  color: #fff; /* White text */
+}
+
+.dropdown-menu {
+  background-color: rgb(64, 88, 109); /* Same as the navbar background */
+}
+.dropdown-item {
+  color: white; /* Ensures text is readable */
+}
+.dropdown-item:hover {
+  background-color: #506b85; /* Slightly lighter shade for hover */
+  color: white;
+}
+.dropdown-divider {
+  border-color: #8fa1b3; /* Adjust divider color to match the theme */
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.image-container img {
+  transition: transform 1.3s ease, filter 0.6s ease;
+  width: 100%;
+  height: auto;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* removes margin introduced by Bootstrap */
+}
+.dropdown-menu {
+  background-color: #404e69; /* Align with navbar background color */
+}
+.dropdown-item:hover {
+  background-color: #506b85; /* Slightly lighter shade for hover */
+  color: white;
+}
+.dropdown-divider {
+  border-color: #8fa1b3; /* Adjust divider color to match the theme */
+}
+
+.facility-image {
+  position: relative;
+  transition: transform 1s ease, filter 0.5s ease;
+}
+
+.facility-image:hover {
+  transform: scale(1.14); /* Zoom in effect */
+  filter: brightness(85%); /* Darken the image slightly */
+}
+

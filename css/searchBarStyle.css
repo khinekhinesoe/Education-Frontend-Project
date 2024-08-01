@@ -1,0 +1,28 @@
+#suggestions {
+    border: 1px solid #d4dffa;
+    border-radius: 4px ;
+    display: none;
+    position: absolute;
+    background-color: rgb(73, 90, 133);
+    max-height: 100px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+#suggestions::-webkit-scrollbar {
+    display: none;
+}
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+
+}
+#suggestions div:hover {
+    background-color: rgb(64, 88, 109);
+}
+
+#suggestion-item:hover {
+    background-color: lightcoral;
+}

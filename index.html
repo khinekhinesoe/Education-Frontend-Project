@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <link rel="stylesheet" href="./css/searchBarStyle.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg text-white " style="background-color: rgb(64, 88, 109);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./image/ukala.png" alt="Logo" width="85" height="55"
+                    class="d-inline-block align-text-top rounded-5">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-lg-5 ms-sm-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5">
+                    <li class="nav-item me-4">
+                        <b><a class="nav-link active" aria-current="page" href="index.html">Home</a></b>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Academic
+                        </a>
+                        <ul class="dropdown-menu bg-">
+                          <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="computerscience.html">Computer Science</a></li>
+                          <li><a class="dropdown-item" href="computertech.html">Computer Technology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                <div class="container-flex justify-content-end">
+                    <form class="row" role="search" onsubmit="return search()">
+                        <div class="col-6">
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" id="search_input"
+                        oninput="showSuggestions()" autocomplete="off">
+                        <div id="suggestions"></div>
+
+                        </div>
+                        <div class="col-6">
+                            <button class="col-6 btn text-white category_hover_button" style="background-color: rgb(147, 173, 194);"
+                            type="submit">Search</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>   
+    <br>
+    <div class="image-with-text">
+        <div class="mb-2 img-fluid" style="margin-top:-24px;">
+            <img src="./image/bg1.jpg" class="img-fluid cam2" alt="BMW Skytop">
+        </div>
+        <div class="top-text-overlay">
+            <h1 class="fonttop m-4">University Of Computer Studies</h1>
+            <button class="btn btn-outline-light btn-lg border-2 hContact contactHover">
+                <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#program" class="w-full fs-sm-2 text-white fs-3 no-underline">Read More</a>
+        </button>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-body-secondary" id="program">
+        <div class="p-3 mt-4">
+            <br>
+            <br>
+            <h2 class="text-center mb-3 mt-4">Our Programs and Majors</h2>
+            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 gy-sm-2 p-4 ms-5 me-1">
+                <div class="col">
+                    <div class="card text-center card-custom h-100 w-75 ">
+                        <img src="./image/ct1.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Bachelor Of Computer Science</h4>
+                            <p class="card-text">The Bachelor of Computer Science program at the University of Magway equips students with a robust foundation in programming, algorithms, and software development. This program prepares graduates for a wide range of career opportunities in both the local and global Technology industries around the world.</p>
+                        </div>
+                        <a type="button" href="computerscience.html" class="btn btn-outline-primary w-75 align-self-center mb-4"
+                            value="See More">See More</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center card-custom h-100 w-75">
+                        <img src="./image/cs.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Bachelor Of Computer Technology</h4>
+                            <p class="card-text">The Bachelor of CT program at the University of Magway provides students with comprehensive knowledge in computer hardware. This program prepares graduates to excel in various technical roles across local, ensuring they are well-equipped to meet the demands of an increasingly digital world.</p>
+                        </div>
+                        <a type="button" href="computertech.html" class="btn btn-outline-primary w-75 align-self-center mb-4"
+                        value="See More">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid bg-dark-subtle">
+        <div class="p-4">
+            <h2 class="text-center fs-3 p-3">Campus and Buildings</h2>
+            <div class="row mt-3">
+                <div class="card mb-4 activity-card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./image/campus3.jpg" class="img-fluid rounded-start max-w-sm" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Main Building</h5>
+                                <p class="card-text">The area where we get an education is called the school building. The decent, neat, clean and beautiful school building indicates the quality of education and domain in the school.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="card mb-3 activity-card">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Padauk Hostel</h5>
+                                <p class="card-text">A boarding school is a school where pupils live within premises while being given formal instruction. The word "boarding" is used in the sense of "room and board".</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./image/campus5_hostel.jpg" class="img-fluid  rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card mb-3 activity-card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./image/park.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Park</h5>
+                                <p class="card-text">Parks play a very important role in society. They help people to stay healthy and fit. walking on grass and staying around a lot of trees is very healthy. It also reduces stress and makes people happy. People meet their friends and spend quality time.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-body-secondary p-6 mt-6 facility-section">
+        <br><br>
+        <h2 class="text-center p-6 mb-4 mt-6">Our Facilities</h2>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="text-center">
+                    <div class="image-container facility-image">
+                        <img src="./image/computer_room2.jpg" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <p>Our facilities include a state-of-the-art computer room equipped with the latest technology and a comprehensive library with a wide range of resources to support your academic and research needs. Additionally, we offer comfortable study areas and collaborative workspaces to enhance your learning experience.</p>
+                </div>
+                <br>
+                <a type="button" href="about.html" class="btn btn-outline-primary w-75 ms-5 mb-4 mt-4"
+                    value="See More">Explore More</a>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <div class="image-container facility-image">
+                        <img src="./image/library3.jpg" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="bg-body-tertiary text-center">
+
+        <div class="container p-4">
+
+            <section class="mb-3">
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+                harum corrupti dicta, aliquam sequi voluptate quas.
+            </p>
+        </div>
+
+        <div class="text-center p-3 text-white " style="background-color: rgb(109, 121, 131);">
+
+            © 2024 OurRight:
+            <a class="text-reset fw-bold" href="#">Our website.com</a>
+        </div>
+
+    </footer>
+    <script>
+        // Show the button when scrolled down 20px from the top of the document
+        window.onscroll = function() {
+            let button = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to the top of the document when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/searchfunction.js"></script>
+</body>
+
+</html>
